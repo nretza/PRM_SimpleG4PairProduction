@@ -1,0 +1,18 @@
+/control/verbose 0
+/run/verbose 0
+
+# TPC Settings
+/simulation/TPC/setPressure 20
+/simulation/TPC/setPositionZ 0 mm
+
+# Physics Settings
+/simulation/physics/addPhysics local
+
+/run/initialize
+/run/setCut 0.001 mm
+/run/printProgress 100
+
+/gun/particle mu-
+/gun/energy 100 GeV
+
+/run/beamOn 10000
